@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        FeetStock
+    </title>
+    
+    <link rel="stylesheet" href="./entrega/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    
+
+        
+    <script src="./entrega/js/prueba.js"></script>
+ 
+</head>
+
+
+    
+
+    
+<body class= "navi" style = 'background-image: url(./entrega/images/fondo.jpg);'>
+   
+
+    <nav>
+        <div class = "container1">
+            <h1 class = "title">FeetStock</h1>
+    
+                <div class = "menu">
+                    
+                        
+                        <a href = "index.html" class = "is-active">Inicio</a>
+                        <!-- <a href = "{% url 'about' %}" >Sobre Nosotros</a> -->
+                        
+                        
+                        
+                            
+                           
+                            
+                                <a class="dropbtn" href = "./store.html">Zapatillas</a>
+                             
+                              <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                              <!-- <div class="dropdown">
+                        
+                                 
+                                <button class="dropbtn"> Hola!</button>
+                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                                  
+                                <div class="dropdown-content">
+                                  <a href="{% url 'editar-perfil' %}">Perfil</a>
+                                  <a href="{% url 'ordenes' %}">Ver Ordenes</a>
+                                  <a href="{% url 'cart' %}">Ver Carrito</a>
+                                  <a href = "{% url 'logout' %}" class = "is-active">Cerrar Sesion</a>
+                                </div> -->
+                              </div>
+                          
+                     
+                            
+                      
+                        
+                </div>
+    
+            <button class = "hamburger ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+<h2 class = "centrar"></h2>
+
+
+
+
+ 
+
+    
+    <h3 style="text-align:center"></h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="card">
+      <img src="./entrega/images/nike.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Nuevos Lanzamientos</h1>
+      <p class="price"></p>
+      <p></p>
+      <a href = "store.html"><button>Ver Zapatillas Disponibles</button></a>
+    </div>
+
+
+</body> 
+
+<section class="footer">
+    <div class="social">
+        <a href="./nadaporaca.html"><i class="fab fa-instagram"></i></a>
+        <a href="./nadaporaca.html"><i class="fab fa-twitter"></i></a>
+        <a href="./nadaporaca.html"><i class="fab fa-facebook"></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="{% url 'home' %}"> Inicio</a>
+        </li>
+        <li>
+            <a href="./nadaporaca.html"> Sobre nosotros</a>
+        </li>
+        <li>
+            <a href="./nadaporaca.html"> Contacto</a>
+        </li>
+        <li>
+            <a href="./nadaporaca.html"> Terminos</a>
+        </li>
+        <li>
+            <a href="./nadaporaca.html"> Politica de Privacidad</a>
+            
+        </li>
+    </ul>
+    <p class = "copyright"> FeetStock @2022</p>
+    
+</section>
+
+</html>

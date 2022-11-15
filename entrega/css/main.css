@@ -1,0 +1,328 @@
+:root{
+    --primary: purple;
+    --light: white;
+    --dark: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+.container1{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navi{
+    align-items: center; 
+}
+nav{
+    position:fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom:  3px solid var(--primary);
+}
+.title{
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hamburger{
+    display: block;
+    position: relative;
+    z-index:1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--light);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+.hamburger:hover span:nth-child(2) {
+    transform: translatex(10px);
+    background-color: var(--primary);
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translatex(15px);
+}
+.menu{
+    display:none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0px -16px;
+}
+.menu a {
+    color: white;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+}
+.menu a.is-active, .menu a:hover {
+    background-color: var(--primary);
+
+}
+@media(min-width: 768px){
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+h2{
+    font-size: 100px;
+}
+h3{
+    font-size: 50px;
+    color: purple; 
+}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 300px;
+      text-align: center;
+      font-family: arial;
+      background-color: #353333;
+      border:  1px solid var(--primary);
+      color: white;
+    }
+    .price {
+      color: white;
+      font-size: 22px;
+    }
+    .card button {
+        /* border:  1px solid var(--primary); */
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    .card button.is-active, .card button:hover {
+        background-color: var(--primary);
+    }
+.dropbtn{
+    background-color: var(--dark);
+    color: white;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 9px;
+    border: none;
+    border-radius: 99px;
+    font-size: inherit;
+}
+.dropdown {
+    position: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    color: white;
+    position: absolute;
+    background-color: var(--dark);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color:var(--primary);}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: var(--primary);
+  }
+.footer{
+    padding: 20px 0;
+    background-color: #222121;
+    border-top:  3px solid var(--primary);
+    position: fixed;
+    margin-top: 15px;
+    height: 50 ;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+  
+    
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+    
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    background-color: var(--primary);
+}
+.footer .social a:hover{
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 8px 16px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6 ;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    border-radius: 99px;
+    
+}
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    border-radius: 99px;
+    padding: 8px 16px;
+}
+.footer ul li a.is-active, .footer ul li a:hover {
+    background-color: var(--primary);
+    border-radius: 99px;
+    transition: 0.4s;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+
+
+}
+.footer ul li a{
+    opacity: 1;
+
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    padding: 20px 0;
+    background-color: #222121;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    height: 50 ;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+.card{
+    color: #000;
+}
+.container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.col-md-6{
+    height: 500px;
+  
+}
+.marca{
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    opacity: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+.oferta{
+    outline: 0;
+    padding: 12px;
+    color: green;
+    background-color: greenyellow;
+    
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+.precionormal{
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: grey;
+    
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
